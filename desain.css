@@ -1,0 +1,73 @@
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+/* Garis Tabel */
+th,
+td {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+.atas {
+  background-color: rgb(186, 184, 184);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  background-color: rgba(214, 214, 214, 0.288);
+}
+
+.form-group .form-label {
+  flex: 0 0 100px;
+  /* Atur lebar label sesuai kebutuhan */
+  margin-right: 10px;
+}
+
+.form-group .form-control {
+  flex: 1;
+}
+
+/* Tata Letak Foto */
+.foto_luar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -180px;
+  padding-right: 280px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+button {
+  background-color: rgba(58, 93, 237, 0.817);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Gaya CSS untuk layar dengan lebar maksimum 768px */
+  .foto_luar {
+    margin: 0; /* Remove the negative margin */
+    padding: 0; /* Remove the padding */
+    margin-right: -250px;
+    margin-top: -200px;
+  }
+
+  .foto_luar img {
+    max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Let the height adjust proportionally */
+  }
+
+  button {
+    margin-top: 60px;
+  }
+}

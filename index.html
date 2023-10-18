@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<form lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profil Mahasiswa</title>
+        <link rel="stylesheet" href="bootstrap/ppp/css/bootstrap.min.css">
+        <link rel="stylesheet" href="desain.css">
+    </head>
+
+    <br>
+    <!-- Data Mahasiswa -->
+    <div class="p-4">
+        <h3 class="fs-4">Data Mahasiswa</h3>
+        <p class=""></p>
+        <table>
+            <tr>
+                <th class="atas" align="left">NPM </th>
+                <td>: 22.01.53.0046</td>
+            </tr>
+            <tr>
+                <th class="atas" align="left">Nama </th>
+                <td>: PRADITYA FAHLEFI</td>
+            </tr>
+            <tr>
+                <th class="atas" align="left">Program </th>
+                <td>: REG-REGULAR</td>
+            </tr>
+            <tr>
+                <th class="atas" align="left">Program Studi </th>
+                <td>: TEKNIK INFORMATIKA</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Data Mahasiswa End -->
+
+    <!-- Foto Mahasiswa -->
+    <div class="foto_luar">
+        <img src="wong ganteng.jpg" width="120px" height="180px" />
+    </div>
+    <!-- Foto Mahasiswa End -->
+
+
+    <!-- Input Button -->
+    <button>Pribadi</button>
+    <button>Alamat Tetap</button>
+    <button>Orang Tua</button>
+    <button>Asal Sekolah</button>
+    <!-- Input Button End -->
+
+    <!-- Biodata -->
+    <div class="p-2">
+        <h3 class="fs-4">Silahkan lengkapi isian data diri</h3>
+        <!-- Form -->
+        <form action="proses_data.php" method="post" enctype="multipart/form-data">
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-1" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="input-1" placeholder="Nama Lengkap Anda" required />
+            </div>
+
+            <div class="form-group mb-3 w-100" id="form">
+                <label for="input-2" class="form-label">Tempat Lahir</label>
+                <input type="text" class="form-control" id="input-2" placeholder="Tempat Lahir Anda" required />
+            </div>
+
+            <div class="form-group mb-3 w-100" id="form">
+                <label for="radio-box2" class="form-label">Warga Negara</label>
+                <input class="form-check-input" type="radio" name="radio-box" id="radio-box2" checked />
+                <label class="form-check-label" for="radio-box2">Warga Negara Indonesia</label>
+                &nbsp; &nbsp; &nbsp;
+                <br />
+                <input class="form-check-input" type="radio" name="radio-box" id="radio-box3" checked />
+                <label class="form-check-label" for="radio-box3">Warga Negara Asing</label>
+            </div>
+
+            <div class="form-group mb-3 w-100" id="form">
+                <label for="hei" class="form-label">Negara</label>
+                <select class="form-select" aria-label="Pilih Negara Anda" required>
+                    <option selected>Pilih Negara Anda</option>
+                    <option value="1">Indonesia</option>
+                    <option value="2">India</option>
+                    <option value="3">Arab</option>
+                    <option value="4">England</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4 w-75" id="form">
+                <label for="input-4" class="form-label">Nama Ibu</label>
+                <input type="text" class="form-control" id="input-4" placeholder="Nama Ibu Anda" />
+            </div>
+
+            <div class="form-group mb-4 w-75" id="form">
+                <label for="input-5" class="form-label">Nama Ayah</label>
+                <input type="text" class="form-control" id="input-5" placeholder="Nama Ayah Anda" />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-6" class="form-label">No KTP Mahasiswa</label>
+                <input type="text" class="form-control" id="input-6" placeholder="Nomer KTP Anda" required />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-7" class="form-label">NISN</label>
+                <input type="text" class="form-control" id="input-7" placeholder="NISN Anda" required />
+            </div>
+
+            <div class="form-group mb-4 w-75" id="form">
+                <label for="input-8" class="form-label">Jenis Kelamin</label>
+                <select class="form-select" id="input-8" aria-label="Jenis Kelamin Anda" required>
+                    <option selected></option>
+                    <option value="1">Laki-Laki</option>
+                    <option value="2">Wanita</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-9" class="form-label">Agama</label>
+                <select class="form-select" id="input-9" aria-label="Agama Anda" required>
+                    <option selected></option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+                &nbsp; &nbsp;
+                <label for="input-10" class="form-label">Gol.Darah</label>
+                <select class="form-select" id="input-10" aria-label="Golongan Darah" required>
+                    <option selected></option>
+                    <option value="1">AB</option>
+                    <option value="2">A</option>
+                    <option value="3">B</option>
+                    <option value="4">O</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4 w-75" id="form">
+                <label for="input-11" class="form-label">Status Sipil</label>
+                <select class="form-select" id="input-11" aria-label="Status Sipil" required>
+                    <option selected></option>
+                    <option value="1">Menikah</option>
+                    <option value="2">Belum Menikah</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-12" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="input-12" placeholder="Alamat Lengkap Anda" required />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-13" class="form-label">RT</label>
+                <input type="text" class="form-control" id="input-13" placeholder="RT" required />
+                &nbsp; &nbsp;
+                <label for="input-14" class="form-label">RW</label>
+                <input type="text" class="form-control" id="input-15" placeholder="RW" required />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-15" class="form-label">Kota/Kabupaten</label>
+                <input type="text" class="form-control" id="input-15" placeholder="Kota/Kabupaten" required />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-16" class="form-label">Kode Pos</label>
+                <input type="text" class="form-control" id="input-16" placeholder="Kode Pos" required />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-17" class="form-label">Kelurahan</label>
+                <input type="text" class="form-control" id="input-17" placeholder="Kelurahan Anda" required />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-18" class="form-label">Kecamatan</label>
+                <input type="text" class="form-control" id="input-18" placeholder="Kecamatan Anda" required />
+            </div>
+
+            <div class="form-group mb-4 w-75" id="form">
+                <label for="input-19" class="form-label">No Telepon/No HP</label>
+                <input type="text" class="form-control" id="input-19" placeholder="Nomer Anda" required />
+            </div>
+
+            <div class="form-group mb-4 w-100" id="form">
+                <label for="input-20" class="form-label">Alamat Email</label>
+                <input type="text" class="form-control" id="input-20" placeholder="Email Anda" required />
+            </div>
+
+            <div class="form-group mb-4 w-100">
+                <label for="formFile" class="form-label">Foto <br />(Menggunakan Jas Almet)
+                </label>
+                <input class="form-control" type="file" id="formFile" required />
+            </div>
+
+            <div class="form-group mb-4 w-100">
+                <label for="formFile-2" class="form-label">Foto Calon Wisudawan</label>
+                <input class="form-control" type="file" id="formFile-2" />
+            </div>
+
+            <div class="form-group mb-4 w-100">
+                <label for="formFile-3" class="form-label">Scan KTP / KK</label>
+                <input class="form-control" type="file" id="formFile-3" required />
+            </div>
+
+            <div class="form-group mb-4 w-100">
+                <label for="formFile-4" class="form-label">Scan Ijazah SMA</label>
+                <input class="form-control" type="file" id="formFile-4" required />
+            </div>
+
+            <div class="form-group mb-4 w-100">
+                <label for="formFile-5" class="form-label">Scan Ijazah Akhir</label>
+                <input class="form-control" type="file" id="formFile-5" />
+            </div>
+
+            <div class="form-group mb-4 w-100">
+                <label for="formFile-6" class="form-label">Scan Transkrip Akhir</label>
+                <input class="form-control" type="file" id="formFile-6" />
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary ms-5">Submit</button>
+                <button type="reset" class="btn btn-secondary ms-5">Reset</button>
+            </div>
+        </form>
+
+        <!-- Form End -->
+
+
+    </div>
+
+
+
+    <script src="bootstrap/ppp/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
